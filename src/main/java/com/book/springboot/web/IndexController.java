@@ -25,6 +25,11 @@ public class IndexController {
         return "index";
     }
 
+    @GetMapping("/index")
+    public String html(){
+        return "index.html";
+    }
+
     @GetMapping("/posts/save")
     public String postsSave() {
         return "posts-save";
