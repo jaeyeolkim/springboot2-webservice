@@ -15,6 +15,7 @@ script: "./gradlew clean build"
 
 
 before_deploy:
+  - chmod +x gradlew
   - zip -r springboot2-webservice *
   - mkdir -p deploy
   - mv springboot2-webservice.zip deploy/springboot2-webservice.zip
